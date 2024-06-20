@@ -1,0 +1,64 @@
+-------------------single resposibility-------------------------------------------
+cohesion : the degree of measure of software components are related 
+coupling : is defined as the level of inter dependency between various software components 
+
+single resposibility 
+evey software components should have one and only one resposibility and reason for change 
+
+aim for high cohesion and loose coupling
+follo single resposibility lead to software maintance cost 
+-------------------open closed-------------------------------------------
+closed for midificatin  and open for extension
+problem
+class insurancepremiumdiDiscount
+{
+ public int calculatepremiumDiscount(customerProfile customer)
+ {
+    if(customer.isLoyal())
+	  return 20;
+ }
+
+}
+
+solved apply interface
+public interface customerProfile
+{
+   public boolean isLoyal();
+}
+
+class vehicle implement customerProfile
+
+class home implement customerProfile
+
+class health implement customerProfile
+---------------------------liskov subwtitution----------------------------
+objects should be replaceable with their subtypes without affection the correctness of the program
+
+dh ma5y 3ala mabd2  tell don't ask 
+tell the code # don't ask the subtypes 
+
+
+------------------------------interface segration-------------------------------------------------
+no client should be forced to depend on methods it does not use
+
+
+
+------------------------------dependy injection-------------------------------------------------
+high level modules should not depend on low level both should depend on abstractions 
+abstraction should not depend on details , details should depend on abstraction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
